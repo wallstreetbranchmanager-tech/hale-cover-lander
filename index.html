@@ -3,118 +3,162 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hale Cover — Tampa Independent Insurance</title>
+  <title>Hale Cover — Independent Tampa Insurance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <p class="ad">Sample site · Not a licensed Florida agency · Lic. W847291 (fictional)</p>
-  <header class="top">
-    <a class="mark" href="#top">Hale <span>Cover</span></a>
+  <p class="ad">Sample advertising · Not a licensed Florida agency · Lic. W847291</p>
+  <header class="nav">
+    <a class="logo" href="#top">Hale Cover</a>
     <nav>
-      <a href="#lines">Lines</a>
-      <a href="#why">Why Hale</a>
-      <a href="#quote">Quote</a>
+      <a href="#lines">Cover</a>
+      <a href="#steps">How</a>
+      <a href="#cass">Cass</a>
     </nav>
-    <a class="phone" href="tel:+18135551212">813.555.1212</a>
+    <a class="tel" href="tel:+18135551212">813.555.1212</a>
   </header>
   <main id="top">
     <section class="hero">
-      <div class="hero-text">
-        <p class="tag">Independent · Tampa Bay · Se habla español</p>
-        <h1>The 1-800 queue does not know your zip.</h1>
-        <p class="lead">Auto, home, wind, flood. Cass Hale shops carriers. You get one person, not a script.</p>
-        <ul class="chips">
-          <li>Auto</li><li>Home</li><li>Flood</li><li>Wind</li><li>Umbrella</li>
-        </ul>
+      <div class="hero-bg" data-pic-bg="sky"></div>
+      <div class="hero-veil"></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">Tampa Bay · Independent · Se habla español</p>
+          <h1>The 1-800 queue does not know your zip.</h1>
+          <p class="lede">Renewal jumped. Roof aged out. Flood was never on the dec page. Cass Hale shops the carriers. You get one person.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#quote">Start a quote</a>
+            <a class="btn ghost" href="tel:+18135551212">Call Cass</a>
+          </div>
+          <p class="es">Se habla español.</p>
+        </div>
+        <form class="glass" id="quote" novalidate>
+          <p class="form-k">Quote in three fields</p>
+          <label>Name<input name="name" autocomplete="name" required /></label>
+          <label>ZIP<input name="zip" inputmode="numeric" maxlength="5" required /></label>
+          <label>Line
+            <select name="line" required>
+              <option value="">Select</option>
+              <option>Auto</option>
+              <option>Home + wind</option>
+              <option>Flood</option>
+              <option>Bundle</option>
+            </select>
+          </label>
+          <button class="btn primary wide" type="submit">Get the call</button>
+          <p class="form-hint">Cass calls back. Not a script desk.</p>
+          <p class="status" id="status" role="status"></p>
+        </form>
       </div>
-      <form class="card" id="quote" novalidate>
-        <p class="card-k">Start a quote</p>
-        <label>Name<input name="name" required /></label>
-        <label>ZIP<input name="zip" inputmode="numeric" maxlength="5" required /></label>
-        <label>Line
-          <select name="line" required>
-            <option value="">Select</option>
-            <option>Auto</option>
-            <option>Home</option>
-            <option>Flood</option>
-            <option>Bundle</option>
-          </select>
-        </label>
-        <button type="submit">Get the call</button>
-        <p class="hint">Se habla español. Cass calls back.</p>
-        <p class="status" id="status" role="status"></p>
-      </form>
     </section>
-    <section class="rail">
-      <div class="wrap nums">
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span>
+        <span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span>
+      </div>
+    </div>
+    <section class="band">
+      <div class="wrap stats">
         <div><b>14</b><span>carriers shopped</span></div>
-        <div><b>11 min</b><span>avg first reply</span></div>
+        <div><b>11 min</b><span>first reply</span></div>
         <div><b>$184</b><span>sample annual save</span></div>
         <div><b>813</b><span>local number</span></div>
       </div>
     </section>
     <section id="lines" class="wrap block">
-      <p class="tag">What we write</p>
+      <p class="kicker">What we write</p>
       <h2>Florida weather is the product.</h2>
-      <div class="tiles">
+      <div class="lines">
         <article>
           <img data-pic="auto" alt="Auto" />
           <h3>Auto</h3>
-          <p>Commute on I-275, rideshare, teen driver. We compare more than one logo.</p>
+          <p>I-275 commute, teen driver, rideshare. More than one logo on the page.</p>
         </article>
         <article>
           <img data-pic="home" alt="Home" />
           <h3>Home + wind</h3>
-          <p>Roof age, deductible, Citizens vs private. The dec page is the file.</p>
+          <p>Roof age. Deductible. Citizens versus private. The dec page is the file.</p>
         </article>
         <article>
           <img data-pic="flood" alt="Flood" />
           <h3>Flood</h3>
-          <p>NFIP and excess. If you are in a zone, we say so before you bind.</p>
+          <p>Zone first. NFIP or excess. If you need it, we say so before you bind.</p>
         </article>
       </div>
     </section>
-    <section id="why" class="why">
-      <div class="wrap why-grid">
-        <img class="face" data-pic="cass" alt="Cass Hale" />
+    <section id="steps" class="wrap block">
+      <p class="kicker">How it works</p>
+      <h2>Three moves. Then a number.</h2>
+      <ol class="steps">
+        <li><b>01</b><div><h3>You send the zip.</h3><p>Name, ZIP, line. That is the whole form.</p></div></li>
+        <li><b>02</b><div><h3>Cass shops.</h3><p>Fourteen appointments. Not one captive logo.</p></div></li>
+        <li><b>03</b><div><h3>You pick.</h3><p>A call with options. Bind only if it is clean.</p></div></li>
+      </ol>
+    </section>
+    <section id="cass" class="cass">
+      <div class="wrap cass-grid">
+        <img data-pic="cass" alt="Cass Hale" />
         <div>
-          <p class="tag">Who picks up</p>
-          <h2>Cass Hale. Not a call center.</h2>
-          <p>2102 W Kennedy Blvd, Tampa, FL 33609. Independent. Lic. W847291. Se habla español.</p>
+          <p class="kicker">Who picks up</p>
+          <h2>Cass Hale. Not a queue.</h2>
+          <p class="body">2102 W Kennedy Blvd, Tampa, FL 33609. Independent. Lic. W847291. Se habla español.</p>
         </div>
       </div>
     </section>
-    <section class="wrap block quotes">
-      <blockquote>
-        <p>“Renewal jumped. Cass had three options the same afternoon.”</p>
-        <cite>L. Ortiz · Westshore</cite>
-      </blockquote>
-      <blockquote>
-        <p>“Flood was the part the last agent skipped.”</p>
-        <cite>K. Brennan · South Tampa</cite>
-      </blockquote>
+    <section class="wrap block">
+      <p class="kicker">What they said</p>
+      <div class="quotes">
+        <blockquote>
+          <p>Renewal jumped. Cass had three options the same afternoon.</p>
+          <cite>L. Ortiz · Westshore</cite>
+        </blockquote>
+        <blockquote>
+          <p>Flood was the part the last agent skipped.</p>
+          <cite>K. Brennan · South Tampa</cite>
+        </blockquote>
+        <blockquote>
+          <p>She said Citizens was a last door. That was the whole meeting.</p>
+          <cite>M. Reyes · Brandon</cite>
+        </blockquote>
+      </div>
+    </section>
+    <section class="wrap block faq">
+      <p class="kicker">Before you bind</p>
+      <h2>Straight answers.</h2>
+      <details open>
+        <summary>Do you write flood?</summary>
+        <p>Yes. Zone first. NFIP and excess if the file needs it.</p>
+      </details>
+      <details>
+        <summary>Are you a captive?</summary>
+        <p>No. Independent. The point is more than one carrier.</p>
+      </details>
+      <details>
+        <summary>Se habla español?</summary>
+        <p>Sí. Cass takes the call in Spanish.</p>
+      </details>
     </section>
   </main>
   <footer>
     <div class="wrap">
-      Sample advertising only. Hale Cover is fictional. Not appointed with any carrier.
+      Sample advertising. Hale Cover is fictional and not appointed with any carrier.
       Lic. W847291 is not a real Florida license. 813.555.1212 is a sample number.
-      Quotes shown are examples, not guarantees.
+      Savings shown are examples, not guarantees.
     </div>
   </footer>
   <div class="dock">
     <a href="tel:+18135551212">Call</a>
     <a class="on" href="#quote">Quote</a>
   </div>
+  <script src="pics.js"></script>
   <script>
     document.getElementById("quote").addEventListener("submit", function (e) {
       e.preventDefault();
       document.getElementById("status").textContent = "Received.";
     });
   </script>
-  <script src="pics.js"></script>
 </body>
 </html>
