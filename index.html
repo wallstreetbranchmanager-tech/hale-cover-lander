@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hale Cover — Tampa Independent Insurance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <p class="ad">Sample site · Not a licensed Florida agency · Lic. W847291 (fictional)</p>
+  <header class="top">
+    <a class="mark" href="#top">Hale <span>Cover</span></a>
+    <nav>
+      <a href="#lines">Lines</a>
+      <a href="#why">Why Hale</a>
+      <a href="#quote">Quote</a>
+    </nav>
+    <a class="phone" href="tel:+18135551212">813.555.1212</a>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">Independent · Tampa Bay · Se habla español</p>
+        <h1>The 1-800 queue does not know your zip.</h1>
+        <p class="lead">Auto, home, wind, flood. Cass Hale shops carriers. You get one person, not a script.</p>
+        <ul class="chips">
+          <li>Auto</li><li>Home</li><li>Flood</li><li>Wind</li><li>Umbrella</li>
+        </ul>
+      </div>
+      <form class="card" id="quote" novalidate>
+        <p class="card-k">Start a quote</p>
+        <label>Name<input name="name" required /></label>
+        <label>ZIP<input name="zip" inputmode="numeric" maxlength="5" required /></label>
+        <label>Line
+          <select name="line" required>
+            <option value="">Select</option>
+            <option>Auto</option>
+            <option>Home</option>
+            <option>Flood</option>
+            <option>Bundle</option>
+          </select>
+        </label>
+        <button type="submit">Get the call</button>
+        <p class="hint">Se habla español. Cass calls back.</p>
+        <p class="status" id="status" role="status"></p>
+      </form>
+    </section>
+    <section class="rail">
+      <div class="wrap nums">
+        <div><b>14</b><span>carriers shopped</span></div>
+        <div><b>11 min</b><span>avg first reply</span></div>
+        <div><b>$184</b><span>sample annual save</span></div>
+        <div><b>813</b><span>local number</span></div>
+      </div>
+    </section>
+    <section id="lines" class="wrap block">
+      <p class="tag">What we write</p>
+      <h2>Florida weather is the product.</h2>
+      <div class="tiles">
+        <article>
+          <img data-pic="auto" alt="Auto" />
+          <h3>Auto</h3>
+          <p>Commute on I-275, rideshare, teen driver. We compare more than one logo.</p>
+        </article>
+        <article>
+          <img data-pic="home" alt="Home" />
+          <h3>Home + wind</h3>
+          <p>Roof age, deductible, Citizens vs private. The dec page is the file.</p>
+        </article>
+        <article>
+          <img data-pic="flood" alt="Flood" />
+          <h3>Flood</h3>
+          <p>NFIP and excess. If you are in a zone, we say so before you bind.</p>
+        </article>
+      </div>
+    </section>
+    <section id="why" class="why">
+      <div class="wrap why-grid">
+        <img class="face" data-pic="cass" alt="Cass Hale" />
+        <div>
+          <p class="tag">Who picks up</p>
+          <h2>Cass Hale. Not a call center.</h2>
+          <p>2102 W Kennedy Blvd, Tampa, FL 33609. Independent. Lic. W847291. Se habla español.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap block quotes">
+      <blockquote>
+        <p>“Renewal jumped. Cass had three options the same afternoon.”</p>
+        <cite>L. Ortiz · Westshore</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Flood was the part the last agent skipped.”</p>
+        <cite>K. Brennan · South Tampa</cite>
+      </blockquote>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      Sample advertising only. Hale Cover is fictional. Not appointed with any carrier.
+      Lic. W847291 is not a real Florida license. 813.555.1212 is a sample number.
+      Quotes shown are examples, not guarantees.
+    </div>
+  </footer>
+  <div class="dock">
+    <a href="tel:+18135551212">Call</a>
+    <a class="on" href="#quote">Quote</a>
+  </div>
+  <script>
+    document.getElementById("quote").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("status").textContent = "Received.";
+    });
+  </script>
+  <script src="pics.js"></script>
+</body>
+</html>
