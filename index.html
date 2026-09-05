@@ -14,9 +14,9 @@
   <header class="nav">
     <a class="logo" href="#top">Hale Cover</a>
     <nav>
-      <a href="#lines">Cover</a>
+      <a href="#why">Why independent</a>
       <a href="#proof">Proof</a>
-      <a href="#cass">Cass</a>
+      <a href="#lines">Cover</a>
       <a href="#quote">Contact</a>
     </nav>
     <a class="tel" href="tel:+18135551212">813.555.1212</a>
@@ -25,27 +25,34 @@
     <section class="hero">
       <div class="hero-bg" data-pic-bg="sky"></div>
       <div class="hero-veil"></div>
-      <div class="grain"></div>
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="kicker">Tampa Bay · Independent · Se habla español</p>
-          <h1>Independent. Works for you. Not a company.</h1>
-          <p class="lede">A captive agent has one logo. Cass Hale shops the book. Renewal jumped. Roof aged out. Flood missing from the dec page. You get one person who does not work for the carrier.</p>
+          <h1>She works for you.<br />Not the company that writes the check.</h1>
+          <p class="lede">One logo is a job. Fourteen appointments is an independent. Cass Hale shops the book when the renewal jumps, the roof ages out, or flood never made the dec page.</p>
           <div class="hero-actions">
             <a class="btn primary" href="#quote">Leave a number</a>
             <a class="btn ghost" href="tel:+18135551212">Call Cass</a>
           </div>
+          <ul class="pills">
+            <li>Not captive</li>
+            <li>Not a 1-800 queue</li>
+            <li>Se habla español</li>
+          </ul>
         </div>
         <figure class="hero-face">
           <img data-pic="cass" alt="Cass Hale" />
-          <figcaption>Cass Hale · independent · sample</figcaption>
+          <figcaption><b>Cass Hale</b> Independent · Tampa · sample</figcaption>
         </figure>
       </div>
-      <div class="ticker" aria-hidden="true">
-        <div class="track">
-          <span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span>
-          <span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span>
-        </div>
+    </section>
+    <div class="ticker" aria-hidden="true"><div class="track"><span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span><span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span></div></div>
+    <section id="why" class="wrap block">
+      <p class="kicker">The split</p>
+      <h2>Company agent vs the person on your street.</h2>
+      <div class="split">
+        <article class="bad"><h3>Captive</h3><ul><li>One logo. One price.</li><li>Script after the 1-800 hold.</li><li>Flood is “not what we write.”</li><li>Works for the company that pays them.</li></ul></article>
+        <article class="good"><h3>Cass</h3><ul><li>Fourteen appointments. You pick.</li><li>Local number. She answers.</li><li>Zone first. NFIP if the file needs it.</li><li>Works for you. Not the carrier.</li></ul></article>
       </div>
     </section>
     <section class="stats wrap">
@@ -72,13 +79,22 @@
         <article><img data-pic="flood" alt="Storm surge street" /><h3>Flood</h3><p>Zone first. NFIP or excess. If you need it, we say so before you bind.</p></article>
       </div>
     </section>
+    <section class="how wrap block">
+      <p class="kicker">How it works</p>
+      <h2>Three moves. Then a number.</h2>
+      <ol>
+        <li><b>01</b><div><h3>You send a number.</h3><p>Name, phone, line. No ZIP form.</p></div></li>
+        <li><b>02</b><div><h3>She shops the book.</h3><p>Not one captive quote dressed up as a comparison.</p></div></li>
+        <li><b>03</b><div><h3>You pick.</h3><p>A call with options. Bind only if it is clean.</p></div></li>
+      </ol>
+    </section>
     <section id="cass" class="cass">
       <div class="wrap cass-grid">
         <img data-pic="cass" alt="Cass Hale" />
         <div>
           <p class="kicker">Who picks up</p>
           <h2>Cass Hale. Independent. Not a company desk.</h2>
-          <p class="body">2102 W Kennedy Blvd, Tampa, FL 33609. She works for you. Not State Farm. Not GEICO. Not a 1-800 hold. Sample lic. W847291. Se habla español.</p>
+          <p class="body">2102 W Kennedy Blvd, Tampa, FL 33609. She works for you. Not the carrier. Sample lic. W847291. Se habla español.</p>
         </div>
       </div>
     </section>
@@ -95,21 +111,13 @@
         <div>
           <p class="kicker">Contact</p>
           <h2>Leave a number. An independent calls.</h2>
-          <p class="body">Name. Phone. Line. No ZIP. She works for you. Se habla español.</p>
+          <p class="body">Name. Phone. Line. She works for you. Se habla español.</p>
           <p class="phone-xl"><a href="tel:+18135551212">813.555.1212</a></p>
         </div>
         <form class="glass" novalidate>
           <label>Name<input name="name" autocomplete="name" required /></label>
           <label>Phone<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required /></label>
-          <label>Line
-            <select name="line" required>
-              <option value="">Select a line</option>
-              <option>Auto</option>
-              <option>Home + wind</option>
-              <option>Flood</option>
-              <option>Bundle</option>
-            </select>
-          </label>
+          <label>Line<select name="line" required><option value="">Select a line</option><option>Auto</option><option>Home + wind</option><option>Flood</option><option>Bundle</option></select></label>
           <button class="btn primary wide" type="submit">Get the call</button>
           <p class="form-hint">Sample form. Nothing is sent to a carrier.</p>
           <p class="status" id="status" role="status"></p>
@@ -117,23 +125,9 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="wrap">
-      Sample advertising. Hale Cover is fictional and not appointed with any carrier.
-      Lic. W847291 is not a real Florida license. 813.555.1212 is a sample number.
-      Dollar figures are examples, not guarantees.
-    </div>
-  </footer>
-  <div class="dock">
-    <a href="tel:+18135551212">Call</a>
-    <a class="on" href="#quote">Quote</a>
-  </div>
+  <footer><div class="wrap">Sample advertising. Hale Cover is fictional and not appointed with any carrier. Lic. W847291 is not a real Florida license. 813.555.1212 is a sample number. Dollar figures are examples, not guarantees.</div></footer>
+  <div class="dock"><a href="tel:+18135551212">Call</a><a class="on" href="#quote">Quote</a></div>
   <script src="pics.js"></script>
-  <script>
-    document.querySelector("form").addEventListener("submit", function (e) {
-      e.preventDefault();
-      document.getElementById("status").textContent = "Received. Sample only.";
-    });
-  </script>
+  <script>document.querySelector("form").addEventListener("submit",function(e){e.preventDefault();document.getElementById("status").textContent="Received. Sample only.";});</script>
 </body>
 </html>
