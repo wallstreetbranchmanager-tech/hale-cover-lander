@@ -3,7 +3,8 @@ const PARTS = {
   auto: ["auto.b64"],
   home: ["home.b64"],
   flood: ["flood.b64"],
-  sky: ["sky.b64"]
+  sky: ["sky.b64"],
+  desk: ["desk.b64"]
 };
 async function load(name) {
   const texts = await Promise.all(PARTS[name].map(function (f) {
