@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hale Cover — Independent Tampa Insurance</title>
-  <meta name="description" content="Sample Tampa independent insurance lander. Cass Hale shops carriers. Not a licensed agency." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -18,6 +17,7 @@
       <a href="#lines">Cover</a>
       <a href="#proof">Proof</a>
       <a href="#cass">Cass</a>
+      <a href="#quote">Contact</a>
     </nav>
     <a class="tel" href="tel:+18135551212">813.555.1212</a>
   </header>
@@ -25,10 +25,80 @@
     <section class="hero">
       <div class="hero-bg" data-pic-bg="sky"></div>
       <div class="hero-veil"></div>
+      <div class="grain"></div>
       <div class="hero-grid">
-        <form class="glass" id="quote" novalidate>
-          <p class="form-k">Leave a number. Cass calls.</p>
-          <p class="form-sub">Name. Phone. Line. No ZIP. Se habla español.</p>
+        <div class="hero-copy">
+          <p class="kicker">Tampa Bay · Independent · Se habla español</p>
+          <h1>The 1–800 queue does not know your street.</h1>
+          <p class="lede">Renewal jumped. Roof aged out. Flood was never on the dec page. Cass Hale shops the carriers. You get one person.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#quote">Leave a number</a>
+            <a class="btn ghost" href="tel:+18135551212">Call Cass</a>
+          </div>
+        </div>
+        <figure class="hero-face">
+          <img data-pic="cass" alt="Cass Hale" />
+          <figcaption>Cass Hale · sample agent</figcaption>
+        </figure>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="track">
+          <span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span>
+          <span>Auto</span><span>Home</span><span>Wind</span><span>Flood</span><span>Umbrella</span><span>Condo</span><span>Boat</span>
+        </div>
+      </div>
+    </section>
+    <section class="stats wrap">
+      <div><b>14</b><span>carriers shopped</span></div>
+      <div><b>11 min</b><span>sample first reply</span></div>
+      <div><b>$184</b><span>sample annual save</span></div>
+      <div><b>813</b><span>local number</span></div>
+    </section>
+    <section id="proof" class="wrap block">
+      <p class="kicker">What the last files paid</p>
+      <h2>Sample outcomes. Not a guarantee.</h2>
+      <div class="save-grid">
+        <article><b>$2,140</b><h3>Home + wind</h3><p>South Tampa roof age forced a non-renew. Three private options the same afternoon.</p></article>
+        <article><b>$890</b><h3>Auto bundle</h3><p>Teen driver plus I-275 commute. Two logos instead of one captive quote.</p></article>
+        <article><b>$4,200</b><h3>Flood gap</h3><p>Zone said AE. Prior agent never wrote NFIP. The claim is what costs.</p></article>
+      </div>
+    </section>
+    <section id="lines" class="wrap block">
+      <p class="kicker">What we write</p>
+      <h2>Florida weather is the product.</h2>
+      <div class="lines">
+        <article><img data-pic="auto" alt="Tampa wet intersection" /><h3>Auto</h3><p>Commute. Teen. Rideshare. More than one logo on the page.</p></article>
+        <article><img data-pic="home" alt="South Tampa bungalow" /><h3>Home + wind</h3><p>Roof age. Deductible. Citizens versus private. The dec page is the file.</p></article>
+        <article><img data-pic="flood" alt="Storm surge street" /><h3>Flood</h3><p>Zone first. NFIP or excess. If you need it, we say so before you bind.</p></article>
+      </div>
+    </section>
+    <section id="cass" class="cass">
+      <div class="wrap cass-grid">
+        <img data-pic="cass" alt="Cass Hale" />
+        <div>
+          <p class="kicker">Who picks up</p>
+          <h2>Cass Hale. Not a queue.</h2>
+          <p class="body">2102 W Kennedy Blvd, Tampa, FL 33609. Independent. Sample lic. W847291. Se habla español.</p>
+        </div>
+      </div>
+    </section>
+    <section class="wrap block">
+      <p class="kicker">What they said</p>
+      <div class="quotes">
+        <blockquote><p>Renewal jumped. Cass had three options the same afternoon.</p><cite>L. Ortiz · Westshore · sample</cite></blockquote>
+        <blockquote><p>Flood was the part the last agent skipped.</p><cite>K. Brennan · South Tampa · sample</cite></blockquote>
+        <blockquote><p>She said Citizens was a last door. That was the whole meeting.</p><cite>M. Reyes · Brandon · sample</cite></blockquote>
+      </div>
+    </section>
+    <section class="contact" id="quote">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="kicker">Contact</p>
+          <h2>Leave a number. Cass calls.</h2>
+          <p class="body">Name. Phone. Line. No ZIP. Se habla español.</p>
+          <p class="phone-xl"><a href="tel:+18135551212">813.555.1212</a></p>
+        </div>
+        <form class="glass" novalidate>
           <label>Name<input name="name" autocomplete="name" required /></label>
           <label>Phone<input name="phone" type="tel" inputmode="tel" autocomplete="tel" required /></label>
           <label>Line
@@ -44,111 +114,7 @@
           <p class="form-hint">Sample form. Nothing is sent to a carrier.</p>
           <p class="status" id="status" role="status"></p>
         </form>
-        <div class="hero-copy">
-          <p class="kicker">Tampa Bay · Independent · Se habla español</p>
-          <h1>The 1-800 queue does not know your street.</h1>
-          <p class="lede">Renewal jumped. Roof aged out. Flood was never on the dec page. Cass Hale shops the carriers. You get one person.</p>
-          <div class="hero-meta">
-            <div><b>14</b><span>carriers shopped</span></div>
-            <div><b>11 min</b><span>sample first reply</span></div>
-            <div><b>813</b><span>local number</span></div>
-          </div>
-          <a class="btn ghost" href="tel:+18135551212">Call Cass</a>
-        </div>
       </div>
-    </section>
-    <section id="proof" class="saves wrap">
-      <p class="kicker">What the last files paid</p>
-      <h2>Sample client outcomes. Not a guarantee.</h2>
-      <div class="save-grid">
-        <article>
-          <b>$2,140</b>
-          <h3>Home + wind</h3>
-          <p>South Tampa roof age forced a non-renew. Three private options the same afternoon.</p>
-          <span>Sample file · 2025</span>
-        </article>
-        <article>
-          <b>$890</b>
-          <h3>Auto bundle</h3>
-          <p>Teen driver plus I-275 commute. Two logos instead of one captive quote.</p>
-          <span>Sample file · 2025</span>
-        </article>
-        <article>
-          <b>$4,200</b>
-          <h3>Flood gap</h3>
-          <p>Zone said AE. Prior agent never wrote NFIP. The claim is what costs.</p>
-          <span>Sample file · 2024</span>
-        </article>
-      </div>
-    </section>
-    <section id="lines" class="wrap block">
-      <p class="kicker">What we write</p>
-      <h2>Florida weather is the product.</h2>
-      <div class="lines">
-        <article>
-          <img data-pic="auto" alt="Tampa wet intersection" />
-          <h3>Auto</h3>
-          <p>Commute. Teen. Rideshare. More than one logo on the page.</p>
-        </article>
-        <article>
-          <img data-pic="home" alt="South Tampa bungalow" />
-          <h3>Home + wind</h3>
-          <p>Roof age. Deductible. Citizens versus private. The dec page is the file.</p>
-        </article>
-        <article>
-          <img data-pic="flood" alt="Storm surge street" />
-          <h3>Flood</h3>
-          <p>Zone first. NFIP or excess. If you need it, we say so before you bind.</p>
-        </article>
-      </div>
-    </section>
-    <section id="cass" class="cass">
-      <div class="wrap cass-grid">
-        <img data-pic="cass" alt="Cass Hale, sample agent portrait" />
-        <div>
-          <p class="kicker">Who picks up</p>
-          <h2>Cass Hale. Not a queue.</h2>
-          <p class="body">2102 W Kennedy Blvd, Tampa, FL 33609. Independent. Sample lic. W847291. Se habla español. One person shops the book. You do not wait in an 800 hold.</p>
-          <a class="btn primary" href="#quote">Start from the form</a>
-        </div>
-      </div>
-    </section>
-    <section class="wrap block">
-      <p class="kicker">What they said</p>
-      <div class="quotes">
-        <blockquote>
-          <p>Renewal jumped. Cass had three options the same afternoon.</p>
-          <cite>L. Ortiz · Westshore · sample</cite>
-        </blockquote>
-        <blockquote>
-          <p>Flood was the part the last agent skipped.</p>
-          <cite>K. Brennan · South Tampa · sample</cite>
-        </blockquote>
-        <blockquote>
-          <p>She said Citizens was a last door. That was the whole meeting.</p>
-          <cite>M. Reyes · Brandon · sample</cite>
-        </blockquote>
-      </div>
-    </section>
-    <section class="wrap block faq">
-      <p class="kicker">Before you bind</p>
-      <h2>Straight answers.</h2>
-      <details open>
-        <summary>Do you write flood?</summary>
-        <p>Yes. Zone first. NFIP and excess if the file needs it.</p>
-      </details>
-      <details>
-        <summary>Are you a captive?</summary>
-        <p>No. Independent. The point is more than one carrier.</p>
-      </details>
-      <details>
-        <summary>Se habla español?</summary>
-        <p>Sí. Cass takes the call in Spanish.</p>
-      </details>
-      <details>
-        <summary>Is this a real agency?</summary>
-        <p>No. This page is sample advertising for a landing-page product. Lic. W847291 is not a real Florida license.</p>
-      </details>
     </section>
   </main>
   <footer>
@@ -164,7 +130,7 @@
   </div>
   <script src="pics.js"></script>
   <script>
-    document.getElementById("quote").addEventListener("submit", function (e) {
+    document.querySelector("form").addEventListener("submit", function (e) {
       e.preventDefault();
       document.getElementById("status").textContent = "Received. Sample only.";
     });
